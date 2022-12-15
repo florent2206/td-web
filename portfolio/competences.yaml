@@ -1,0 +1,21 @@
+Programmation:
+    - nom: HTML
+      niveau: 80
+    - nom: CSS
+      niveau: 60
+    - nom: PHP
+      niveau: 30
+Langues:
+    - nom: Français
+      niveau: 95
+    - nom: Anglais
+      niveau: 70
+    - nom: Espagnol
+      niveau: 70 
+Certifications:
+    - nom: Pix
+      niveau: 512 pix 
+    - nom: MOOC CNIL
+      niveau: 93.6 %
+    - nom: MOOC ANSSI
+      niveau: 89 %

@@ -1,0 +1,9 @@
+menu:
+  - Accueil
+  - A propos
+  - Contact
+  - Compétences
+ 
+user:
+  lastname: Lamy
+  firstname: Florent 
