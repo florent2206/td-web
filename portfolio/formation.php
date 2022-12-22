@@ -1,6 +1,5 @@
 <div class="formation">
-<a name="formation"></a>
-<h2>Formation</h2>
+<h2 class="titre">Formation</h2>
 <?php
     $data=yaml_parse_file("formation.yaml");
     

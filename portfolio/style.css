@@ -16,32 +16,6 @@
 }
 
 
-@media only screen and (max-width: 1667px) {
-	main {
-		padding: 5vw;
-		padding-right: 0vw;
-		row-gap: 5vw;
-	}
-		
-	div {
-		width: 26vw;
-		margin-right: 5vw;
-	}
-}
-	
-@media only screen and (max-width: 1154px) {
-	div {
-		width: 42vw;
-	}
-}
-	
-@media only screen and (max-width: 710px) {
-	div {
-		width: 90vw;
-	}
-}
-	
-
 body { 
 	Background: linear-gradient(1deg, black,grey,lightgrey);
 	
@@ -68,7 +42,7 @@ nav a {
 		
 }
 
-h2{
+.titre {
 	justify-content: center;
 	font-family: arial;
 	margin-top: 300px;
@@ -78,7 +52,6 @@ h2{
 	border: 5px solid whitesmoke;
 	width: 50%;
 	margin-left: 25%;
-	margin-right: 25%;
 	text-align: center;
 }
 /*-----------------------------*/
@@ -167,7 +140,7 @@ h3{
 .paragraphe h1{
 	float: left;
 	width: 80%;
-	height: 500px;
+	/*height: 500px;*/
 	justify-self: flex-start;
 	margin-left: 30px;
 	color: white;
@@ -178,8 +151,8 @@ h3{
 .imageflo img{
 	width: 240px;
 	height: 290px;
-	border: 2px solid red;
-	margin-left: 60px;
+	border: 2px solid white;
+	margin: 0px 30px;
 }
 
 
@@ -299,7 +272,34 @@ h3{
     border: solid gray 2px;
 }
  
- 
+@media (max-width: 1500px) {
+	.titre {
+		font-size: 25px;
+		
+	}
+	nav {
+		display: block;
+		position: static;
+		text-align: center;
+	}
+	nav a {
+		display: block;
+		position: static;
+		text-align: center;
+	}
+}
+	
+@media only screen and (max-width: 1160px) {
+	.titre {
+		font-size: 15px;
+	}
+}
+	
+@media only screen and (max-width: 710px) {
+	.titre {
+		font-size: 10px;
+	}
+}
  
 
 

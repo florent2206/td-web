@@ -1,5 +1,4 @@
 <div class="contenu-footer">
-<a name="contact"></a>
 <?php
 $data=yaml_parse_file("contact.yaml");
 foreach($data AS $tab) {

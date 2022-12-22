@@ -1,6 +1,5 @@
 <div class="paragraphe">
-<a name="competences"></a>
-<h2>Compétences</h2>
+<h2 class="titre">Compétences</h2>
 <?php
     // ################## Page competences ##################################
     $data=yaml_parse_file("competences.yaml");
