@@ -1,6 +1,5 @@
 <div class="com">
-<a name="experience"></a>
-<h2>Expériences</h2>
+<h2 class="titre">Expériences</h2>
 <?php
 $data=yaml_parse_file("experiences.yaml");
 foreach($data AS $tab) {

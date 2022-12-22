@@ -5,7 +5,32 @@ foreach($data AS $tab) {
     /*echo '<h6>'.$tab["contact"].'</h6>';*/
 }
 ?>
+<form action="send-email.php" method="POST">
 <div class="formu">
+<p>
+   Votre prénom et votre nom :<br />
+   <input type="text" name="prenom" value="" placeholder="Prenom et nom"/>
+</p>
+<p>
+   Votre e-mail :<br />
+   <input type="text" name="e-mail" value="" placeholder="mail de l'emetteur"/>
+</p>
+<p>
+   Vous êtes<br />
+   <select name="profil">
+      <option value="parti">Un professeur</option>
+      <option value="profe" selected="selected">Un élève</option>
+      <option value="insti">Un intru</option>
+   </select>
+</p>
+<p>
+   Objet du message :<br />
+   <input name="message" rows="6" placeholder="Objet du message"/>
+</p>
+<p>
+   <input type="submit" value="Envoyer" />
+</p>
+</form>
 
 
 </div>

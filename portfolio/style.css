@@ -155,10 +155,6 @@ h3{
 	margin: 0px 30px;
 }
 
-
-
-
-/*6666666666666666666666666666666666666666*/
 .paragraphe h4{
 	width: 40%;
 	background-color: white;
@@ -277,6 +273,23 @@ h3{
 		font-size: 25px;
 		
 	}
+
+	.paragraphe h1 {
+		font-size: 15px;
+	}
+
+	.paragraphe h4 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 10pt;
+	}
+
+	.formation div p{
+		font-size: 10pt;
+	}
+
 	nav {
 		display: block;
 		position: static;

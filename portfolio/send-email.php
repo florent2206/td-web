@@ -1,0 +1,39 @@
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//$secret=yaml_parse_file('secret.yaml')
+
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
+$mail = new PHPMailer(true);
+try{
+    $mail->SMTPDebug = 0;
+    $mail->IsSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'florent.test1234@gmail.com';
+    $mail->Password = 'test1234+';
+    $mail->SMTPSecure = 'STARTTLS';
+    $mail->Port = 465;
+    $mail->CharSet = 'UTF-8';
+
+    $mail->SetFrom($_POST['prenom'], $_POST['e-mail']);
+    $mail->AddAddress('florent.lamy@sts-sio-caen.info');
+
+    $mail->isHTML(true);
+    $mail->Subject = $_POST['prenom'];
+    $mail->Body    = $_POST['e-mail'];
+    $mail->Body    = $_POST['profil'];
+    $mail->Body    = $_POST['message'];
+
+    $mail->Send();
+    header('Location: index.php');
+    exit();
+}catch (\Exception $e){
+   echo "Erreur lors de l'envoi de votre message !";
+}
+
+?>
