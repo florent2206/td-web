@@ -3,8 +3,6 @@
 		<head>
 			<title>accueil</title>
 			<meta charset="utf8">
-			<link rel="stylesheet" href="">
-    		<link rel="stylesheet" href="">
 			<link rel="stylesheet" href="style.css">
 		</head>
 		<body>
@@ -15,13 +13,19 @@
 				<a href="#experience">Expérience</a>
 				<a href="#formation">Formation</a>
 				<a href="#contact">Contact</a>
+
+				<?php
+                date_default_timezone_set('Europe/Paris');
+                $date = date('d-m-y h:i:s');
+                echo $date;
+            	?>
 			</nav>
 
 			<?php
-				// ################## Page accueil ##################################
+			// ################## Page accueil ##################################
 			  include("accueil.php");
 			?>
-
+			
 			<a name="A Propos"></a>
 
 			<?php
