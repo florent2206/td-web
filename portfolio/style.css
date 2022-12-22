@@ -178,13 +178,10 @@ h3{
 .imageflo img{
 	width: 240px;
 	height: 290px;
-	border: 2px solid white;
+	border: 2px solid red;
 	margin-left: 60px;
 }
 
-.formulaire form{
-	color: rgb(0, 255, 115);
-}
 
 
 
