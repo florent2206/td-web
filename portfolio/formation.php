@@ -16,6 +16,5 @@ foreach($data AS $tab) {
     echo '<p>'.$tab["infosisr"].'</p>';  
     echo '</div>';
 }
-    
 ?>
 </div>
