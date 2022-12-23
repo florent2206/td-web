@@ -36,5 +36,13 @@ try{
    echo "Erreur lors de l'envoi de votre message !";
    echo 'mailer error: '. $mail->ErrorInfo;
 }
-
+//
+$mail->SMTPOptions = array(
+    'ssl' => array(
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true
+    )
+    );
+//
 ?>
