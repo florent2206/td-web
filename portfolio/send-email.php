@@ -17,7 +17,7 @@ try{
     $mail->Username = $secret['mail'];
     $mail->Password = $secret['mdp'];
     $mail->SMTPSecure = 'STARTTLS';
-    $mail->Port = 465;
+    $mail->Port = 25;
     $mail->CharSet = 'UTF-8';
 
     $mail->setFrom($_POST['prenom'], $_POST['e-mail']);
