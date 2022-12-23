@@ -6,5 +6,7 @@ foreach($data AS $tab) {
     echo '<h4>'.$tab["poste"].'</h4>';
     echo '<p>'.$tab["lieu"].'</p>'.'<br>';
     echo '<p>'.$tab["descriptif"].'</p>'.' <br/> '; 
+    //echo '<h4>'.$tab["cv"].'</h4>';
+    //echo '<a href="">'.$tab["lien"].'</a>'.' <br/> ';
 }
 ?>

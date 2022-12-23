@@ -8,12 +8,12 @@ foreach($data AS $tab) {
 <form action="send-email.php" method="POST">
 <div class="formu">
 <p>
-   Votre prénom et votre nom :<br />
-   <input type="text" name="prenom" value="" placeholder="Prenom et nom"/>
+   Votre e-mail :<br />
+   <input type="text" name="prenom" value="" placeholder="mail de l'émetteur"/>
 </p>
 <p>
-   Votre e-mail :<br />
-   <input type="text" name="e-mail" value="" placeholder="mail de l'emetteur"/>
+   Votre nom et votre prénom :<br />
+   <input type="text" name="e-mail" value="" placeholder="nom et prénom"/>
 </p>
 <p>
    Vous êtes<br />
