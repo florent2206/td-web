@@ -28,7 +28,9 @@ try{
     $mail->Body    = $_POST['e-mail'].'</br>';
     $mail->Body    = $_POST['profil'].'</br>';
     $mail->Body    = $_POST['message'];
-
+//
+    $mail->SMTPDebug = 2 ;
+//
     $mail->Send();
     header('Location: index.php');
     exit();
@@ -36,13 +38,5 @@ try{
    echo "Erreur lors de l'envoi de votre message !";
    echo 'mailer error: '. $mail->ErrorInfo;
 }
-//
-$mail->SMTPOptions = array(
-    'ssl' => array(
-    'verify_peer' => false,
-    'verify_peer_name' => false,
-    'allow_self_signed' => true
-    )
-    );
-//
+
 ?>
