@@ -17,7 +17,7 @@ try{
     $mail->Username = $secret['mail'];
     $mail->Password = $secret['mdp'];
     $mail->SMTPSecure = 'STARTTLS';
-    $mail->Port = 587;
+    $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
 
     $mail->setFrom($_POST['prenom'], $_POST['e-mail']);
@@ -28,9 +28,7 @@ try{
     $mail->Body    = $_POST['e-mail'].'</br>';
     $mail->Body    = $_POST['profil'].'</br>';
     $mail->Body    = $_POST['message'];
-//
-    $mail->SMTPDebug = 2 ;
-//
+
     $mail->Send();
     header('Location: index.php');
     exit();
