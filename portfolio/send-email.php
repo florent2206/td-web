@@ -17,8 +17,11 @@ try{
     $mail->Username = $secret['mail'];
     $mail->Password = $secret['mdp'];
     $mail->SMTPSecure = 'STARTTLS';
-    $mail->Port = 25;
+    $mail->Port = 587;
     $mail->CharSet = 'UTF-8';
+    //
+    $mail->Host = gethostbyname('sn1.migomta.one');
+    //
 
     $mail->setFrom($_POST['prenom'], $_POST['e-mail']);
     $mail->addAddress('florent.lamy@sts-sio-caen.info');
